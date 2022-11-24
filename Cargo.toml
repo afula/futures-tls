@@ -1,0 +1,19 @@
+[package]
+name = "futures-tls"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[dependencies]
+futures-io = "0.3.25"
+rustls = { version = "0.20.7", default-features = false }
+webpki = "0.22"
+
+[features]
+default = ["logging", "tls12"]
+dangerous_configuration = ["rustls/dangerous_configuration"]
+early-data = []
+logging = ["rustls/logging"]
+tls12 = ["rustls/tls12"]
