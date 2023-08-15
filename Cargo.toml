@@ -8,7 +8,7 @@ edition = "2021"
 
 [dependencies]
 futures-io = "0.3.25"
-rustls = { version = "0.20.7", default-features = false }
+rustls = { version = "0.21.6", default-features = false }
 webpki = "0.22"
 
 [features]
